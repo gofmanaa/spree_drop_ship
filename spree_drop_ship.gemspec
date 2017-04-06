@@ -19,9 +19,9 @@ Gem::Specification.new do |s|
   s.requirements << 'none'
 
   s.add_dependency 'durable_decorator'
-  s.add_dependency 'spree_api'
-  s.add_dependency 'spree_backend'
-  s.add_dependency 'spree_core'
+  # # s.add_dependency 'spree_api'
+  # # s.add_dependency 'spree_backend'
+  # # s.add_dependency 'spree_core'
 
   s.add_development_dependency 'capybara'
   s.add_development_dependency 'coffee-rails'
