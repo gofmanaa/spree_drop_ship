@@ -1,3 +1,5 @@
+lib = File.expand_path('../lib/', __FILE__)
+$LOAD_PATH.unshift lib unless $LOAD_PATH.include?(lib)
  # encoding: UTF-8
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
@@ -5,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = '3.0.1.beta'
   s.summary     = 'Spree Drop Shipping Extension'
   s.description = 'Adds drop shipping functionality to Spree stores.'
-  s.required_ruby_version = '>= 2.0.0'
+  s.required_ruby_version = '>= 2.3.3'
 
   s.author    = 'Jeff Dutil'
   s.email     = 'JDutil@BurlingtonWebApps.com'
@@ -16,20 +18,20 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'durable_decorator', '~> 0.2.0'
+  s.add_dependency 'durable_decorator'
   s.add_dependency 'spree_api'
   s.add_dependency 'spree_backend'
-  s.add_dependency 'spree_core',        '~> 3.1.0.beta'
+  s.add_dependency 'spree_core'
 
-  s.add_development_dependency 'capybara',           '~> 2.2'
+  s.add_development_dependency 'capybara'
   s.add_development_dependency 'coffee-rails'
   s.add_development_dependency 'coveralls'
   s.add_development_dependency 'database_cleaner'
-  s.add_development_dependency 'factory_girl_rails', '~> 4.2'
+  s.add_development_dependency 'factory_girl_rails'
   s.add_development_dependency 'ffaker'
   s.add_development_dependency 'launchy'
-  s.add_development_dependency 'rspec-rails',        '~> 2.99'
-  s.add_development_dependency 'sass-rails',         '~> 4.0.2'
+  s.add_development_dependency 'rspec-rails'
+  s.add_development_dependency 'sass-rails'
   s.add_development_dependency 'selenium-webdriver'
   s.add_development_dependency 'shoulda-matchers'
   s.add_development_dependency 'spree_auth_devise'
